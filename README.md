@@ -1,4 +1,16 @@
-# 📦 Project Setup
+# Robust Command Line Calculator
+
+This project is a robust command-line calculator built in Python. It allows users to perform basic arithmetic operations, including addition, subtraction, multiplication, and division.
+
+---
+
+# Features
+
+This app features addition, subtraction, multiplication, and division of various integer types. Users will be able to quickly and easily perform these basic arithmetic operations directly from the terminal.
+
+The calculator supports multiple integer types and ensures smooth user interaction with built-in error handling for edge cases like division by zero and invalid input.
+
+# Project Setup
 
 ---
 
@@ -104,6 +116,7 @@ cat ~/.ssh/id_ed25519.pub | clip
 ```
 
 5. Add the key to your GitHub account:
+
    - Go to [GitHub SSH Settings](https://github.com/settings/keys)
    - Click **New SSH Key**, paste the key, save.
 
@@ -148,7 +161,9 @@ Download and install [Python for Windows](https://www.python.org/downloads/).
 ```bash
 python3 --version
 ```
+
 or
+
 ```bash
 python --version
 ```
@@ -204,6 +219,17 @@ docker run -it --rm <image-name>
 python main.py
 ```
 
+# usage
+
+The calculator will prompt you to choose one of the following operations and two numbers:
+• Add: Add two numbers
+• Subtract: Substract two numbers
+• Multiply: Multiply two numbers
+• Divide: Divide two numbers
+• Error Handling:
+Division by zero is caught and the program prints: Division by zero not allowed.
+Invalid operations input will prompt: Invalid operation.
+
 (or update this if the main script is different.)
 
 - **With Docker**:
@@ -214,35 +240,21 @@ docker run -it --rm <image-name>
 
 ---
 
-# 📝 7. Submission Instructions
-
-After finishing your work:
-
-```bash
-git add .
-git commit -m "Complete Module X"
-git push origin main
-```
-
-Then submit the GitHub repository link as instructed.
-
----
-
 # 🔥 Useful Commands Cheat Sheet
 
-| Action                         | Command                                          |
-| ------------------------------- | ------------------------------------------------ |
-| Install Homebrew (Mac)          | `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` |
-| Install Git                     | `brew install git` or Git for Windows installer |
-| Configure Git Global Username  | `git config --global user.name "Your Name"`      |
-| Configure Git Global Email     | `git config --global user.email "you@example.com"` |
-| Clone Repository                | `git clone <repo-url>`                          |
-| Create Virtual Environment     | `python3 -m venv venv`                           |
-| Activate Virtual Environment   | `source venv/bin/activate` / `venv\Scripts\activate.bat` |
-| Install Python Packages        | `pip install -r requirements.txt`               |
-| Build Docker Image              | `docker build -t <image-name> .`                |
-| Run Docker Container            | `docker run -it --rm <image-name>`               |
-| Push Code to GitHub             | `git add . && git commit -m "message" && git push` |
+| Action                        | Command                                                                                           |
+| ----------------------------- | ------------------------------------------------------------------------------------------------- |
+| Install Homebrew (Mac)        | `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` |
+| Install Git                   | `brew install git` or Git for Windows installer                                                   |
+| Configure Git Global Username | `git config --global user.name "Your Name"`                                                       |
+| Configure Git Global Email    | `git config --global user.email "you@example.com"`                                                |
+| Clone Repository              | `git clone <repo-url>`                                                                            |
+| Create Virtual Environment    | `python3 -m venv venv`                                                                            |
+| Activate Virtual Environment  | `source venv/bin/activate` / `venv\Scripts\activate.bat`                                          |
+| Install Python Packages       | `pip install -r requirements.txt`                                                                 |
+| Build Docker Image            | `docker build -t <image-name> .`                                                                  |
+| Run Docker Container          | `docker run -it --rm <image-name>`                                                                |
+| Push Code to GitHub           | `git add . && git commit -m "message" && git push`                                                |
 
 ---
 
